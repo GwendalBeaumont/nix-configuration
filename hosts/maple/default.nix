@@ -8,7 +8,7 @@
     # "${nixosModules}/flatpak"
     "${nixosModules}/gnome"
     "${nixosModules}/printing"
-    # "${nixosModules}/qemu"
+    "${nixosModules}/qemu"
     # "${nixosModules}/wireshark"
   ];
 
