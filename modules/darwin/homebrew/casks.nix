@@ -5,6 +5,7 @@
     # Dev
     "android-studio"
     "eclipse-ide"
+    "pgadmin4"
     "visual-studio-code"
 
     # Communications
