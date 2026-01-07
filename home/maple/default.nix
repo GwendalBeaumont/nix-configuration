@@ -20,7 +20,6 @@
       drawio
       evince
       libreoffice-fresh
-      super-productivity
       zotero
 
       # Misc
