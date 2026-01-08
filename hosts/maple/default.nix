@@ -6,7 +6,6 @@
 
     "${nixosModules}/gnome"
     "${nixosModules}/printing"
-    # "${nixosModules}/wireshark"
   ];
 
   # Bootloader
