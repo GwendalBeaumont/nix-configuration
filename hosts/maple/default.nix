@@ -4,7 +4,6 @@
   imports = [
     ./hardware-configuration.nix
 
-    # "${nixosModules}/flatpak"
     "${nixosModules}/gnome"
     "${nixosModules}/printing"
     "${nixosModules}/qemu"
