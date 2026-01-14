@@ -5,6 +5,7 @@
     ../common
 
     ./eclipse
+    ./element-desktop
     ./emacs
     ./firefox
     ./git
