@@ -4,7 +4,6 @@
   imports = [
     ../common
 
-    ./dir-env
     ./eclipse
     ./element-desktop
     ./emacs
