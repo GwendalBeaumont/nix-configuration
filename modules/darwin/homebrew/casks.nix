@@ -13,7 +13,6 @@
     "signal"
     "thunderbird"
     "whatsapp"
-    "webex"
 
     # Utils
     "darktable"
