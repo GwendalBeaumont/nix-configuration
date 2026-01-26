@@ -22,7 +22,6 @@
       gnome-font-viewer
       gnome-maps
       gnome-music
-      gnome-text-editor
       gnome-tour
       gnome-user-docs
       gnome-weather
