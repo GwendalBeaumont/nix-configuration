@@ -1,8 +1,10 @@
-{ config, pkgs, hostname, username, nixosModules, ... }:
+{ config, pkgs, hostname, username, nixosModules, overlays, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
+
+    "${overlays}/pipewire"
 
     "${nixosModules}/gnome"
     "${nixosModules}/printing"
