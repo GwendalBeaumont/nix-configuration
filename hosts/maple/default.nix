@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
 
-    "${overlays}/pipewire"
+     # "${overlays}/pipewire"
 
     "${nixosModules}/gnome"
     "${nixosModules}/printing"
