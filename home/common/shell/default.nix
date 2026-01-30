@@ -42,5 +42,6 @@
       enable = true;
       enableZshIntegration = true;
     };
+    ripgrep.enable = true;
   };
 }

@@ -22,7 +22,6 @@
     coreutils
     curl
     gnumake
-    ripgrep
     trash-cli
     tree-sitter
     wget
