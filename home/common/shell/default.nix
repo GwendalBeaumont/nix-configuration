@@ -38,6 +38,9 @@
     bat.enable = true;
     fastfetch.enable = true;
     fd.enable = true;
-    fzf.enable = true;
+    fzf = {
+      enable = true;
+      enableZshIntegration = true;
+    };
   };
 }
