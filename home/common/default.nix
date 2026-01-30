@@ -21,7 +21,6 @@
     # Utils
     coreutils
     curl
-    fastfetch
     fd
     fzf
     gnumake

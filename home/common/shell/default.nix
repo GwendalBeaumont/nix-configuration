@@ -34,5 +34,8 @@
     lg = "lazygit";
   };
 
-  programs.bat.enable = true;
+  programs = {
+    bat.enable = true;
+    fastfetch.enable = true;
+  };
 }
