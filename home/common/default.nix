@@ -21,7 +21,6 @@
     # Utils
     coreutils
     curl
-    fd
     fzf
     gnumake
     lf

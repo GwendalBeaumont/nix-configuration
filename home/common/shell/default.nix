@@ -37,5 +37,6 @@
   programs = {
     bat.enable = true;
     fastfetch.enable = true;
+    fd.enable = true;
   };
 }
