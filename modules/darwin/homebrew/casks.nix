@@ -12,7 +12,6 @@
     "element"
     "signal"
     "thunderbird"
-    "whatsapp"
 
     # Utils
     "darktable"
