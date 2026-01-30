@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./btop
     ./dir-env
     ./git
     ./gpg
@@ -19,7 +20,6 @@
 
     # Utils
     bat
-    btop
     coreutils
     curl
     fastfetch
