@@ -21,7 +21,6 @@
     # Utils
     coreutils
     curl
-    fzf
     gnumake
     lf
     ripgrep
