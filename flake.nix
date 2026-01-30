@@ -24,7 +24,6 @@
 	  specialArgs = {
 	    inherit inputs outputs hostname username;
 	    nixosModules = "${self}/modules/nixos";
-      overlays = "${self}/overlays";
 	  };
 
 	  modules = [
@@ -51,7 +50,6 @@
 	  specialArgs = {
 	    inherit inputs outputs hostname username;
       darwinModules = "${self}/modules/darwin";
-      overlays = "${self}/overlays";
 	  };
 
 	  modules = [
