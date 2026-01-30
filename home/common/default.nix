@@ -7,7 +7,6 @@
     ./git
     ./gpg
     ./kitty
-    ./latex
     ./lf
     ./neovim
     ./shell
@@ -26,5 +25,8 @@
     trash-cli
     tree-sitter
     wget
+
+    # LaTeX
+    texliveFull
   ];
 }
