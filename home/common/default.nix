@@ -19,7 +19,6 @@
     unzip
 
     # Utils
-    bat
     coreutils
     curl
     fastfetch

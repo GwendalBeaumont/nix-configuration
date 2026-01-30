@@ -33,4 +33,6 @@
 
     lg = "lazygit";
   };
+
+  programs.bat.enable = true;
 }
