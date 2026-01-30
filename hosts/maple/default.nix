@@ -1,11 +1,11 @@
-{ config, pkgs, hostname, username, nixosModules, ... }:
+{ config, pkgs, hostname, username, modules, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
 
-    "${nixosModules}/gnome"
-    "${nixosModules}/printing"
+    "${modules}/gnome"
+    "${modules}/printing"
   ];
 
   # Bootloader

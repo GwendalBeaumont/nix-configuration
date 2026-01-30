@@ -20,63 +20,63 @@
       inherit (self) outputs;
 
       mkNixosConfiguration = hostname: username:
-	nixpkgs.lib.nixosSystem {
-	  specialArgs = {
-	    inherit inputs outputs hostname username;
-	    nixosModules = "${self}/modules/nixos";
-	  };
+        nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs outputs hostname username;
+            modules = "${self}/modules";
+          };
 
-	  modules = [
-	    ./hosts/${hostname}
-	     home-manager.nixosModules.home-manager
-	     {
-         home-manager = {
-           useGlobalPkgs = true;
-	         useUserPackages = true;
-	         verbose = true;
-	         users.${username} = ./home/${hostname};
+          modules = [
+            ./hosts/${hostname}
+            home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                verbose = true;
+                users.${username} = ./home/${hostname};
 
-           extraSpecialArgs = {
-             inherit username;
-           };
-         };
-	     }
-	  ];
-	};
+                extraSpecialArgs = {
+                  inherit username;
+                };
+              };
+            }
+          ];
+        };
 
       mkDarwinConfiguration = hostname: username:
-	nix-darwin.lib.darwinSystem {
-	  system = "aarch64-darwin";
-	  specialArgs = {
-	    inherit inputs outputs hostname username;
-      darwinModules = "${self}/modules/darwin";
-	  };
-
-	  modules = [
-	    ./hosts/${hostname}
-	    home-manager.darwinModules.home-manager
-      {
-        home-manager = {
-          useGlobalPkgs = true;
-	        useUserPackages = true;
-	        verbose = true;
-	        users.${username} = ./home/${hostname};
-
-          extraSpecialArgs = {
-            inherit username;
+        nix-darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          specialArgs = {
+            inherit inputs outputs hostname username;
+            modules = "${self}/modules";
           };
-        };
-	    }
-	  ];
-	};
-    in
-    {
-      nixosConfigurations = {
-	"maple" = mkNixosConfiguration "maple" "g23beaum";
-      };
 
-      darwinConfigurations = {
-	"cedar" = mkDarwinConfiguration "cedar" "gwendalbeaumont";
+          modules = [
+            ./hosts/${hostname}
+            home-manager.darwinModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                verbose = true;
+                users.${username} = ./home/${hostname};
+
+                extraSpecialArgs = {
+                  inherit username;
+                };
+              };
+            }
+          ];
+        };
+    in
+      {
+        nixosConfigurations = {
+          "maple" = mkNixosConfiguration "maple" "g23beaum";
+        };
+
+        darwinConfigurations = {
+          "cedar" = mkDarwinConfiguration "cedar" "gwendalbeaumont";
+        };
       };
-    };
 }
