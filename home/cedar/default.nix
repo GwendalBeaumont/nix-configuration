@@ -6,6 +6,7 @@
 
     ./git
     ./kitty
+    ./lazygit
     ./neovim
   ];
 
@@ -17,7 +18,6 @@
       cairo
       cocoapods
       pinentry_mac
-      lazygit
 
       # Dictionnaries
       hunspell
