@@ -28,8 +28,10 @@
     lla = "ls -la";
 
     nrs = "sudo nixos-rebuild switch";
+    nrb = "sudo nixos-rebuild boot";
     drs = "sudo darwin-rebuild switch";
     nfu = "nix flake update --flake ~/nix-configuration/";
+    diradd = "echo 'use nix' > .envrc && direnv allow";
 
     lg = "lazygit";
   };
