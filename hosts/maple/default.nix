@@ -30,7 +30,7 @@
       enable = true;
 
       plugins = with pkgs; [
-      networkmanager-openvpn
+        networkmanager-openvpn
       ];
     };
   };
@@ -69,7 +69,6 @@
   console.keyMap = "fr";
 
   # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
