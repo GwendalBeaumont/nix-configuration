@@ -93,9 +93,6 @@
     isNormalUser = true;
     description = "Gwendal";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      thunderbird
-    ];
     shell = pkgs.zsh;
   };
 

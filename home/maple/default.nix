@@ -24,6 +24,7 @@
       drawio
       evince
       libreoffice-fresh
+      thunderbird
       zotero
 
       # Misc
