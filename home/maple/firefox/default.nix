@@ -37,7 +37,7 @@
             "Name" = "Qwant";
             "URLTemplate" = "https://www.qwant.com/?q={searchTerms}";
             "Method" = "GET";
-            "IconURL" = "https://qwant.com/favicon.ico";
+            "IconURL" = "https://www.qwant.com/public/favicon.066f5ee2ab77b590bb5846c32c57cb84.ico";
             "Alias" = "@qwant";
             "Description" = "Search with Qwant";
           }
