@@ -35,13 +35,6 @@
     };
   };
 
-  # Security
-  security.pam.yubico = {
-    enable = true;
-    mode = "challenge-response";
-    id = [ "35769241" ];
-  };
-
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
