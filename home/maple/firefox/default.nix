@@ -13,7 +13,6 @@
       "AutofillAddressEnabled" = false;
       "AutofillCreditCardEnabled" = false;
       "DisableFormHistory" = true;
-      "DisablePocket" = true;
       "DisableProfileImport" = true;
       "OfferToSaveLoginsDefault" = false;
       "PasswordManagerEnabled" = false;
