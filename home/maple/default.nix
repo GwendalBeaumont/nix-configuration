@@ -17,6 +17,9 @@
     homeDirectory = "/home/${username}";
 
     packages = with pkgs; [
+      # Communication
+      signal-desktop
+
       # Productivity
       drawio
       evince
