@@ -29,6 +29,14 @@
       "SearchEngines" = {
         "Add" = [
           {
+            "Name" = "Qwant";
+            "URLTemplate" = "https://www.qwant.com/?q={searchTerms}";
+            "Method" = "GET";
+            "IconURL" = "https://qwant.com/favicon.ico";
+            "Alias" = "@qwant";
+            "Description" = "Search with Qwant";
+          }
+          {
             "Name" = "Nixpkgs (unstable)";
             "URLTemplate" = "https://search.nixos.org/packages?channel=unstable&query={searchTerms}";
             "Method" = "GET";
@@ -37,6 +45,7 @@
             "Description" = "Search in nixpkgs (unstable)";
           }
         ];
+        "Default" = "Qwant";
       };
     };
   };
