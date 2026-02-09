@@ -14,6 +14,12 @@
       "AutofillCreditCardEnabled" = false;
       "DisableFormHistory" = true;
       "DisableProfileImport" = true;
+      "DNSOverHTTPS" = {
+        "Enabled" = true;
+        "ProviderURL" = "https://adblock.dns.mullvad.net/dns-query";
+        "Locked" = true;
+        "Fallback" = false;
+      };
       "OfferToSaveLoginsDefault" = false;
       "PasswordManagerEnabled" = false;
       "SanitizeOnShutdown" = {
