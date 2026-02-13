@@ -49,6 +49,14 @@
             "Alias" = "@nix";
             "Description" = "Search in nixpkgs (unstable)";
           }
+          {
+            "Name" = "Google Scholar";
+            "URLTemplate" = "https://scholar.google.com/scholar?q={searchTerms}";
+            "Method" = "GET";
+            "IconURL" = "https://scholar.google.com/favicon.ico";
+            "Alias" = "@scholar";
+            "Description" = "Search in Google Scholar";
+          }
         ];
         "Default" = "Qwant";
       };
