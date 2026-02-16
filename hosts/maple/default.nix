@@ -119,6 +119,8 @@
   # Enable Linux Vendor Firmware Update
   services.fwupd.enable = true;
 
+  services.flatpak.enable = true;
+
   # Deactivate documentation
   documentation.nixos.enable = false;
 
