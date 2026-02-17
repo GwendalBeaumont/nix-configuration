@@ -31,7 +31,26 @@
 
       plugins = with pkgs; [
         networkmanager-openvpn
+        networkmanager-openconnect
       ];
+
+      ensureProfiles = {
+        profiles.tuWien = {
+          connection = {
+            id = "TU Wien";
+            type = "vpn";
+          };
+          vpn = rec {
+            gateway = "vpn.tuwien.ac.at";
+            remote = gateway;
+
+            service-type = "org.freedesktop.NetworkManager.openconnect";
+            protocol = "anyconnect";
+            useragent = "AnyConnect";
+            authtype = "password";
+          };
+        };
+      };
     };
   };
 
