@@ -9,8 +9,6 @@
     services.gnome = {
       core-developer-tools.enable = false;
       games.enable = false;
-
-      gnome-software.enable = true;
     };
 
     environment.gnome.excludePackages = with pkgs; [
