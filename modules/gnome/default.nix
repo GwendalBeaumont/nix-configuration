@@ -22,10 +22,12 @@
       gnome-font-viewer
       gnome-maps
       gnome-music
+      gnome-system-monitor
       gnome-tour
       gnome-user-docs
       gnome-weather
       simple-scan
+      snapshot
       totem
       yelp
     ];
