@@ -2,8 +2,9 @@
 
 {
   programs.kitty = {
-    themeFile = "Japanesque";
+    enableGitIntegration = true;
 
+    themeFile = "Japanesque";
     font = {
       package = pkgs.nerd-fonts.jetbrains-mono;
       name = "JetBrainsMono Nerd Font Mono";
