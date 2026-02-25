@@ -6,6 +6,10 @@
       user.email = "gwendal.beaumont@gmail.com";
     };
 
+    ignores = [
+      "*.DS_Store"
+    ];
+
     includes = [
       {
         condition = "gitdir:~/Documents/twindevops";
