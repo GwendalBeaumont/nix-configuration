@@ -30,6 +30,7 @@
 
   programs = {
     bat.enable = true;
+    btop.enable = true;
     fastfetch.enable = true;
     fd.enable = true;
     fzf = {

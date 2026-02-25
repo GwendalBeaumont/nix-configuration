@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./btop
     ./dir-env
     ./git
     ./gpg
