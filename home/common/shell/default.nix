@@ -16,9 +16,6 @@
   };
 
   home.shellAliases = {
-    e = "nvim";
-    o = "xdg-open";
-    open = "xdg-open";
     mk = "(){ mkdir -p $1 && cd $1 }";
     phd = "cd $HOME/Documents/twindevops";
 
@@ -27,13 +24,8 @@
     ll = "ls -l";
     lla = "ls -la";
 
-    nrs = "sudo nixos-rebuild switch";
-    nrb = "sudo nixos-rebuild boot";
-    drs = "sudo darwin-rebuild switch";
     nfu = "nix flake update --flake ~/nix-configuration/";
     diradd = "echo 'use nix' > .envrc && direnv allow";
-
-    lg = "lazygit";
   };
 
   programs = {
