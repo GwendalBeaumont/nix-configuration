@@ -20,6 +20,10 @@
         "Locked" = true;
         "Fallback" = false;
       };
+      "GenerativeAI" = {
+        "Enabled" = false; # Disables everything by default
+        "Locked" = true;
+      };
       "OfferToSaveLoginsDefault" = false;
       "PasswordManagerEnabled" = false;
       "SanitizeOnShutdown" = {
