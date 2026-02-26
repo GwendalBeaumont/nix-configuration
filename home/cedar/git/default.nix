@@ -19,12 +19,6 @@
             name = "Gwendal Beaumont";
             signingKey = "DBF0167B74C46CA84C0D258851F454CFBA3AEA40";
           };
-          commit = {
-            gpgSign = true;
-          };
-          gpg = {
-            format = "openpgp";
-          };
         };
       }
     ];
