@@ -5,7 +5,8 @@
     o = "xdg-open";
     open = "xdg-open";
 
-    nrs = "sudo nixos-rebuild switch";
+    nrd = "nixos-rebuild dry-run";
     nrb = "sudo nixos-rebuild boot";
+    nrs = "sudo nixos-rebuild switch";
   };
 }
