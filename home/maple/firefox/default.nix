@@ -4,10 +4,7 @@
   programs.firefox = {
     enable = true;
 
-    languagePacks = [
-      "en-GB"
-      "fr"
-    ];
+    languagePacks = [ "en-GB" ];
 
     policies = {
       "AutofillAddressEnabled" = false;
