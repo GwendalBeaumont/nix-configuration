@@ -4,6 +4,7 @@
   imports = [
     ./hardware-configuration.nix
 
+    "${modules}/containers"
     "${modules}/gnome"
     "${modules}/printing"
   ];
