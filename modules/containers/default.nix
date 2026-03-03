@@ -10,6 +10,10 @@
     };
   };
 
+  environment.systemPackages = with pkgs; [
+    podman-compose
+  ];
+
   users.users."${username}" = {
     extraGroups = [
       "podman"
