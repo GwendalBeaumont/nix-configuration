@@ -33,7 +33,6 @@
     ];
 
     systemPackages = with pkgs.gnomeExtensions; [
-      status-icons
       tiling-shell
     ];
   };
