@@ -1,6 +1,10 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
+  imports = [
+    ./fastfetch.nix
+  ];
+
   programs.zsh = {
     enable = true;
     defaultKeymap = "emacs";
@@ -31,7 +35,6 @@
   programs = {
     bat.enable = true;
     btop.enable = true;
-    fastfetch.enable = true;
     fd.enable = true;
     fzf = {
       enable = true;
