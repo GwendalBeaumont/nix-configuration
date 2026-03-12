@@ -10,6 +10,7 @@
     ./firefox
     ./git
     ./kitty
+    ./onlyoffice
     ./shell
   ];
 
