@@ -7,7 +7,6 @@
     settings = {
       logo = {
         type = "none";
-        };
       };
 
       modules = [
