@@ -27,6 +27,7 @@
           };
 
           modules = [
+            ./hosts/common/nixos
             ./hosts/${hostname}
             home-manager.nixosModules.home-manager
             {

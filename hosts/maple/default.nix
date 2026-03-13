@@ -3,7 +3,6 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../common/nixos.nix
 
     "${modules}/containers"
     "${modules}/gnome"
