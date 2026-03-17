@@ -7,60 +7,77 @@
     languagePacks = [ "en-GB" ];
 
     policies = {
-      "AutofillAddressEnabled" = false;
-      "AutofillCreditCardEnabled" = false;
-      "DisableFormHistory" = true;
-      "DisableProfileImport" = true;
-      "DNSOverHTTPS" = {
-        "Enabled" = true;
-        "ProviderURL" = "https://adblock.dns.mullvad.net/dns-query";
-        "Locked" = true;
-        "Fallback" = false;
+      AppAutoUpdate = false;
+      AutofillAddressEnabled = false;
+      AutofillCreditCardEnabled = false;
+      DisableAppUpdate = true;
+      DisableFormHistory = true;
+      DisableProfileImport = true;
+      DNSOverHTTPS = {
+        Enabled = true;
+        ProviderURL = "https://adblock.dns.mullvad.net/dns-query";
+        Locked = true;
+        Fallback = false;
       };
-      "GenerativeAI" = {
-        "Enabled" = false; # Disables everything by default
-        "Locked" = true;
+      DontCheckDefaultBrowser = true;
+      GenerativeAI = {
+        Enabled = false; # Disables everything by default
+        Locked = true;
       };
-      "OfferToSaveLoginsDefault" = false;
-      "PasswordManagerEnabled" = false;
-      "SanitizeOnShutdown" = {
-        "Cache" = true;
-        "Cookies" = false;
-        "FormData" = true;
-        "History" = false;
-        "Sessions" = false;
-        "SiteSettings" = false;
-        "Locked" = false;
+      Homepage = {
+        StartPage = "previous-session";
       };
-      "SearchEngines" = {
-        "Add" = [
+      HttpsOnlyMode = "force_enabled";
+      OfferToSaveLoginsDefault = false;
+      PasswordManagerEnabled = false;
+      SanitizeOnShutdown = {
+        Cache = true;
+        Cookies = false;
+        FormData = true;
+        History = false;
+        Sessions = false;
+        SiteSettings = false;
+        Locked = false;
+      };
+      SearchEngines = {
+        Add = [
           {
-            "Name" = "Qwant";
-            "URLTemplate" = "https://www.qwant.com/?q={searchTerms}&t=web&l=en&s=0&theme=-1&hc=0&hti=0&b=0";
-            "Method" = "GET";
-            "IconURL" = "https://www.qwant.com/public/favicon.066f5ee2ab77b590bb5846c32c57cb84.ico";
-            "Alias" = "@qwant";
-            "Description" = "Search with Qwant";
+            Name = "Qwant";
+            URLTemplate = "https://www.qwant.com/?q={searchTerms}&t=web&l=en&s=0&theme=-1&hc=0&hti=0&b=0";
+            Method = "GET";
+            IconURL = "https://www.qwant.com/public/favicon.066f5ee2ab77b590bb5846c32c57cb84.ico";
+            Alias = "@qwant";
+            Description = "Search with Qwant";
           }
           {
-            "Name" = "Nixpkgs (unstable)";
-            "URLTemplate" = "https://search.nixos.org/packages?channel=unstable&query={searchTerms}";
-            "Method" = "GET";
-            "IconURL" = "https://nixos.org/favicon.ico";
-            "Alias" = "@nix";
-            "Description" = "Search in nixpkgs (unstable)";
+            Name = "Nixpkgs (unstable)";
+            URLTemplate = "https://search.nixos.org/packages?channel=unstable&query={searchTerms}";
+            Method = "GET";
+            IconURL = "https://nixos.org/favicon.ico";
+            Alias = "@nix";
+            Description = "Search in nixpkgs (unstable)";
           }
           {
-            "Name" = "Google Scholar";
-            "URLTemplate" = "https://scholar.google.com/scholar?q={searchTerms}";
-            "Method" = "GET";
-            "IconURL" = "https://scholar.google.com/favicon.ico";
-            "Alias" = "@scholar";
-            "Description" = "Search in Google Scholar";
+            Name = "Google Scholar";
+            URLTemplate = "https://scholar.google.com/scholar?q={searchTerms}";
+            Method = "GET";
+            IconURL = "https://scholar.google.com/favicon.ico";
+            Alias = "@scholar";
+            Description = "Search in Google Scholar";
           }
         ];
-        "Default" = "Qwant";
+        Default = "Qwant";
+        PreventInstalls = true;
+        Remove = [
+          "Bing"
+          "DuckDuckGo"
+          "eBay"
+          "Ecosia"
+          "Perplexity"
+          "Wikipedia (en)"
+        ];
       };
+      ShowHomeButton = false;
     };
   };
 }
