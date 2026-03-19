@@ -38,4 +38,6 @@
       };
     };
   };
+
+  services.flatpak.enable = true;
 }
