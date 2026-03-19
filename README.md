@@ -1,0 +1,26 @@
+[![system build](https://github.com/GwendalBeaumont/nix-configuration/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/GwendalBeaumont/nix-configuration/actions/workflows/build.yml)
+
+# nix-configuration
+
+This repo is a flake that manages the configuration of my NixOS and darwin systems.
+
+## Installation
+
+- Clone the repository
+
+``` sh
+git clone git@github.com:GwendalBeaumont/nix-configuration.git ~
+```
+
+- Move the hardware-configuration file
+
+``` sh
+mkdir -p ~/nix-configuration/hosts/<hostname> &&  mv /etc/nixos/hardware-configuration.nix ~/nix-configuration/hosts/<hostname>
+```
+
+- Delete the `/etc/nixos/` folder
+
+``` sh
+rm -rf /etc/nixos/ 
+```
+
