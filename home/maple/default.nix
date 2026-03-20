@@ -12,6 +12,7 @@
     ./kitty
     ./onlyoffice
     ./shell
+    ./vscode
   ];
 
   home = {
