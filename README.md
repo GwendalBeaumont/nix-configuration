@@ -1,5 +1,3 @@
-[![system build](https://github.com/GwendalBeaumont/nix-configuration/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/GwendalBeaumont/nix-configuration/actions/workflows/build.yml)
-
 # nix-configuration
 
 This repo is a flake that manages the configuration of my NixOS and darwin systems.
