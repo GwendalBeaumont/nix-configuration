@@ -29,7 +29,7 @@
     lla = "ls -la";
 
     nfu = "nix flake update --flake ~/nix-configuration/";
-    diradd = "echo 'use nix' > .envrc && direnv allow";
+    enva = "echo 'use flake' > .envrc && direnv allow";
   };
 
   programs = {
