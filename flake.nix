@@ -13,9 +13,11 @@
       url = "github:nix-darwin/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-darwin, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-darwin, nix-flatpak, ... }@inputs:
     let
       inherit (self) outputs;
 
@@ -29,6 +31,7 @@
           modules = [
             ./hosts/common/nixos
             ./hosts/${hostname}
+            nix-flatpak.nixosModules.nix-flatpak
             home-manager.nixosModules.home-manager
             {
               home-manager = {
