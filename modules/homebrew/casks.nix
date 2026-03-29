@@ -14,7 +14,6 @@
     "thunderbird"
 
     # Utils
-    "darktable"
     "drawio"
     "firefox"
     "kitty"
