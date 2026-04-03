@@ -31,9 +31,5 @@
       totem
       yelp
     ];
-
-    systemPackages = with pkgs.gnomeExtensions; [
-      tiling-shell
-    ];
   };
 }
