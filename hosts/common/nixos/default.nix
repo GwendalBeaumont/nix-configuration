@@ -6,9 +6,10 @@
     kernelPackages = pkgs.linuxPackages_latest;
 
     loader = {
-      systemd-boot = {
+      limine = {
         enable = true;
-        configurationLimit = 10;
+        secureBoot.enable = true;
+        maxGenerations = 10;
       };
       efi = {
         canTouchEfiVariables = true;
@@ -84,6 +85,7 @@
   environment.systemPackages = with pkgs; [
     git
     vim
+    sbctl
   ];
 
   # Env
