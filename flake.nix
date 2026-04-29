@@ -60,6 +60,7 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
+                backupFileExtension = "bak";
                 verbose = true;
                 users.${username} = ./home/${hostname};
 
