@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./dir-env
+    ./direnv
     ./git
     ./gpg
     ./kitty
