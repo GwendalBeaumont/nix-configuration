@@ -6,6 +6,8 @@
 
     "${modules}/containers"
     "${modules}/gnome"
+    "${modules}/mangowm"
+    "${modules}/noctalia"
     "${modules}/printing"
   ];
 
