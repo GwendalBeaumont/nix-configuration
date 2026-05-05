@@ -18,7 +18,7 @@
         Enabled = true;
         ProviderURL = "https://adblock.dns.mullvad.net/dns-query";
         Locked = true;
-        Fallback = false;
+        Fallback = true;
       };
       DontCheckDefaultBrowser = true;
       GenerativeAI = {
