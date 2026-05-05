@@ -5,9 +5,9 @@
     ./hardware-configuration.nix
 
     "${modules}/containers"
-    "${modules}/dankmaterialshell"
+    # "${modules}/dankmaterialshell"
     "${modules}/gnome"
-    "${modules}/mangowm"
+    # "${modules}/mangowm"
     "${modules}/printing"
   ];
 

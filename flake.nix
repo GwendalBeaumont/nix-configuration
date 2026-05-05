@@ -14,13 +14,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    mangowm = {
-      url = "github:mangowm/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # mangowm = {
+    #   url = "github:mangowm/mango";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-darwin, mangowm, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-darwin, ... }@inputs:
     let
       inherit (self) outputs;
 
@@ -47,7 +47,7 @@
                 };
               };
             }
-            mangowm.nixosModules.mango
+            # mangowm.nixosModules.mango
           ];
         };
 
