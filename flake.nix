@@ -13,11 +13,6 @@
       url = "github:nix-darwin/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    # mangowm = {
-    #   url = "github:mangowm/mango";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
   };
 
   outputs = { self, nixpkgs, home-manager, nix-darwin, ... }@inputs:
@@ -47,7 +42,6 @@
                 };
               };
             }
-            # mangowm.nixosModules.mango
           ];
         };
 
