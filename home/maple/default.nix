@@ -30,6 +30,7 @@
 
       # Misc
       noto-fonts-cjk-sans
+      qbz
 
       # Utils
       libgcc
