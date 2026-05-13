@@ -12,24 +12,25 @@
 
   environment = {
     gnome.excludePackages = with pkgs; [
-      decibels
-      epiphany
-      geary
-      gnome-characters
-      gnome-connections
-      gnome-console
-      gnome-contacts
-      gnome-font-viewer
-      gnome-maps
-      gnome-music
-      gnome-system-monitor
-      gnome-tour
-      gnome-user-docs
-      gnome-weather
-      simple-scan
-      snapshot
-      totem
-      yelp
+      decibels # Audio Player
+      epiphany # Web
+      geary # Mail
+      gnome-characters # Characters
+      gnome-clocks # Clocks
+      gnome-connections # Connections
+      gnome-console # Console
+      gnome-contacts # Contacts
+      gnome-font-viewer # Fonts
+      gnome-maps # Maps
+      gnome-music # Music
+      gnome-system-monitor # System Monitor
+      gnome-tour # Tour
+      gnome-user-docs # User Documentation
+      gnome-weather # Weather
+      simple-scan # Document Scanner
+      snapshot # Camera
+      showtime # Video Player
+      yelp # Help
     ];
   };
 }
