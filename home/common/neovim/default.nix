@@ -15,4 +15,8 @@
       go
     ];
   };
+
+  home.shellAliases = {
+    e = "nvim";
+  };
 }
