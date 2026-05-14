@@ -1,7 +1,7 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-  programs.lazygit = {
+  programs.neovim = {
     enable = true;
   };
 }

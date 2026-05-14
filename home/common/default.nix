@@ -6,6 +6,7 @@
     ./git
     ./gpg
     ./kitty
+    ./lazygit
     ./lf
     ./neovim
     ./shell

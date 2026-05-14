@@ -6,10 +6,12 @@
 
     ./eclipse
     ./element-desktop
-    ./emacs
+    # ./emacs
     ./firefox
     ./git
     ./kitty
+    ./lazygit
+    ./neovim
     ./onlyoffice
     ./shell
     ./vscode
