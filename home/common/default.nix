@@ -23,7 +23,6 @@
     gnumake
     trash-cli
     tree-sitter
-    wget
 
     # LaTeX
     texliveFull
