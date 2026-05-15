@@ -40,10 +40,6 @@
       wl-clipboard
     ];
 
-    sessionPath = [
-      "$HOME/.emacs.d/bin"
-    ];
-
     stateVersion = "25.05";
   };
 
