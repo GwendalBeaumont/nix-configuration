@@ -11,9 +11,11 @@
     withRuby = true;
 
     extraPackages = with pkgs; [
-      markdownlint-cli
+      markdownlint-cli2
       go
     ];
+
+    initLua = "require 'globals'\nrequire 'options'\nrequire 'autocmd'\nrequire 'bindings'\nrequire 'groups'";
   };
 
   home.shellAliases = {
