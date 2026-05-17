@@ -1,62 +1,17 @@
 { config, pkgs, hostname, username, ... }:
 
 {
-  # Boot options
-  boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
-
-    loader = {
-      limine = {
-        enable = true;
-        secureBoot.enable = true;
-        maxGenerations = 10;
-      };
-      efi = {
-        canTouchEfiVariables = true;
-      };
-    };
-  };
-
-  # Networking
-  networking = {
-    hostName = "${hostname}";
-    networkmanager.enable = true;
-  };
-
-  # Set your time zone.
-  time.timeZone = "Europe/Paris";
-
-  # Select internationalisation properties.
-  i18n = {
-    defaultLocale = "en_GB.UTF-8";
-
-    extraLocaleSettings = {
-      LC_ADDRESS = "fr_FR.UTF-8";
-      LC_IDENTIFICATION = "fr_FR.UTF-8";
-      LC_MEASUREMENT = "fr_FR.UTF-8";
-      LC_MONETARY = "fr_FR.UTF-8";
-      LC_NAME = "fr_FR.UTF-8";
-      LC_NUMERIC = "fr_FR.UTF-8";
-      LC_PAPER = "fr_FR.UTF-8";
-      LC_TELEPHONE = "fr_FR.UTF-8";
-      LC_TIME = "en_DK.UTF-8";
-    };
-  };
-
-  # Power management for laptops
-  services.thermald.enable = true;
+  imports = [
+    ./boot.nix
+    ./internationalisation.nix
+    ./networking.nix
+    ./programs.nix
+    ./sound.nix
+    ./user.nix
+  ];
 
   # Configure console keymap
   console.keyMap = "fr";
-
-  # Enable sound with pipewire.
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
 
   # Garbage collection
   nix = {
@@ -68,13 +23,8 @@
     settings.auto-optimise-store = true;
   };
 
-  # User account
-  users.users.${username} = {
-    isNormalUser = true;
-    description = "${username}";
-    extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.zsh;
-  };
+  # Power management for laptops
+  services.thermald.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -88,25 +38,10 @@
     sbctl
   ];
 
-  # Env
+  # Wayland
   environment.sessionVariables = {
     NIXOS_OZONE_WL = "1";
   };
-
-  # Programs
-  programs.zsh.enable = true;
-
-  programs.gnupg.agent = {
-    enable = true;
-    pinentryPackage = pkgs.pinentry-gnome3;
-  };
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-  services.pcscd.enable = true;
-
-  # Enable Linux Vendor Firmware Update
-  services.fwupd.enable = true;
 
   # Deactivate documentation
   documentation.nixos.enable = false;
