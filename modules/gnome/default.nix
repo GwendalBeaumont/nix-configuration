@@ -4,6 +4,9 @@
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
 
+  # Necessary for GDM
+  services.xserver.xkb.layout = "fr";
+
   # Make sure dev-tools and games aren't installed by default
   services.gnome = {
     core-developer-tools.enable = false;
