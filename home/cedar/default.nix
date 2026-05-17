@@ -19,11 +19,6 @@
       cairo
       cocoapods
       pinentry_mac
-
-      # Dictionnaries
-      hunspell
-      hunspellDicts.en_US
-      hunspellDicts.fr-any
     ];
 
     sessionPath = [

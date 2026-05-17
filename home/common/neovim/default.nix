@@ -11,6 +11,12 @@
     withRuby = true;
 
     extraPackages = with pkgs; [
+      # Dictionnaries
+      hunspell
+      hunspellDicts.en_US
+      hunspellDicts.fr-any
+
+      # Tools
       markdownlint-cli2
       go
     ];
