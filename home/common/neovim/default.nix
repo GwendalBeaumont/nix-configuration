@@ -11,14 +11,14 @@
     withRuby = true;
 
     extraPackages = with pkgs; [
-      # Dictionnaries
-      hunspell
-      hunspellDicts.en_US
-      hunspellDicts.fr-any
-
       # Tools
+      imagemagick
       markdownlint-cli2
       go
+    ];
+
+    plugins = with pkgs.vimPlugins; [
+      (nvim-treesitter.withPlugins (p: with p; [ latex regex ]))
     ];
 
     initLua = "require 'globals'\nrequire 'options'\nrequire 'autocmd'\nrequire 'bindings'\nrequire 'groups'";
@@ -27,4 +27,10 @@
   home.shellAliases = {
     e = "nvim";
   };
+
+  home.packages = with pkgs; [
+    ghostscript
+    imagemagick
+    markdownlint-cli2
+  ];
 }
