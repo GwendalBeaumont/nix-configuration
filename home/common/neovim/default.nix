@@ -11,6 +11,9 @@
     withRuby = true;
 
     extraPackages = with pkgs; [
+      # LSP
+      lua-language-server
+
       # Tools
       imagemagick
       markdownlint-cli2
@@ -31,6 +34,7 @@
   home.packages = with pkgs; [
     ghostscript
     imagemagick
+    lua-language-server
     markdownlint-cli2
   ];
 }
