@@ -27,6 +27,7 @@
       gnome-maps # Maps
       gnome-music # Music
       gnome-system-monitor # System Monitor
+      gnome-text-editor # Text Editor
       gnome-tour # Tour
       gnome-user-docs # User Documentation
       gnome-weather # Weather
