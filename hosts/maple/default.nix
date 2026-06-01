@@ -6,6 +6,7 @@
 
     "${modules}/containers"
     "${modules}/gnome"
+    "${modules}/keyboard"
     "${modules}/printing"
   ];
 
