@@ -2,7 +2,7 @@
 
 {
   # Add QMK/VIA support
-  environment.systemPackages = with pkgs; [ via qmk ];
+  environment.systemPackages = with pkgs; [ qmk ];
   hardware.keyboard.qmk.enable = true;
 
   # Add udev rule for MonsGeek M1 V5 ISO
