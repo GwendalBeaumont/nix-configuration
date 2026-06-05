@@ -17,6 +17,7 @@
       cleanup = "uninstall";
       extraFlags = [
         "--verbose"
+        "--force-cleanup"
       ];
       upgrade = true;
     };
