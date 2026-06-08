@@ -5,7 +5,10 @@
   services.desktopManager.gnome.enable = true;
 
   # Necessary for GDM
-  services.xserver.xkb.layout = "eu";
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "altgr-intl";
+  };
 
   # Make sure dev-tools and games aren't installed by default
   services.gnome = {
