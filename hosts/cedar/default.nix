@@ -60,6 +60,7 @@
         _FXSortFoldersFirst = true;
       };
       screencapture = {
+        location = "~/Pictures/screenshots";
         type = "png";
         disable-shadow = true;
       };
