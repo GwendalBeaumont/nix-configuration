@@ -6,6 +6,7 @@
 
     "${modules}/containers"
     "${modules}/gnome"
+    "${modules}/hyprland"
     "${modules}/keyboard"
     "${modules}/printing"
   ];

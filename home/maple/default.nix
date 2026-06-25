@@ -9,6 +9,7 @@
     # ./emacs
     ./firefox
     ./git
+    ./hyprland
     ./kitty
     ./lazygit
     ./neovim
