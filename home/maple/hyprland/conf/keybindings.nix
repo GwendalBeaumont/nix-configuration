@@ -95,19 +95,6 @@
           (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = \"e+1\" })")
         ];
       }
-      {
-        _args = [
-          (lib.generators.mkLuaInline "mainMod .. \" + CONTROL + left\"")
-          (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = \"e-1\" })")
-        ];
-      }
-      # Scroll through existing workspaces with mainMod + scroll
-      {
-        _args = [
-          (lib.generators.mkLuaInline "mainMod .. \" + CONTROL + right\"")
-          (lib.generators.mkLuaInline "hl.dsp.focus({ workspace = \"e+1\" })")
-        ];
-      }
 
       {
         _args = [
