@@ -107,7 +107,38 @@ with lib; {
   };
   
   # Status bar
-  programs.ashell.enable = true;
+  programs.ashell = {
+    enable = true;
+    settings = {
+      position = "Top";
+
+      modules = {
+        left = [
+          "Workspaces"
+          "WindowTitle"
+        ];
+        center = [
+          "Tempo"
+          "MediaPlayer"
+        ];
+        right = [
+          "SystemInfo"
+          [
+            "Tray"
+          ]
+          [
+            "Privacy"
+            "Settings"
+          ]
+        ];
+      };
+
+      osd = {
+        enabled = true;
+        timeout = 1500;
+      };
+    };
+  };
 
   # Launcher
   services.hyprlauncher.enable = true;
