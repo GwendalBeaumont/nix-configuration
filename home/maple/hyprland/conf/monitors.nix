@@ -16,6 +16,12 @@
         position = "-2560x0";
         scale = 1;
       }
+      {
+        output = "desc:Dell Inc. DELL U2724DE 7W4FCP3";
+        mode = "2560x1440@120";
+        position = "-2560x0";
+        scale = 1;
+      }
     ];
   };
 }
