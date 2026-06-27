@@ -6,7 +6,7 @@
     animation = {
       leaf = "global";
       enabled = true;
-      speed = 0.1;
+      speed = 1;
       bezier = "quick";
     };
 
