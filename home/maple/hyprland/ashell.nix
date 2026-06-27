@@ -38,6 +38,24 @@
         enabled = true;
         timeout = 1500;
       };
+
+      settings = {
+        battery_format = "IconAndTime";
+        audio_indicator_format = "IconAndPercentage";
+        microphone_indicator_format = "IconAndPercentage";
+      };
+
+      system_info.memory = {
+        format = "Fraction";
+      };
+
+      system_info.disk = {
+        format = "Fraction";
+      };
+
+      workspaces = {
+        visibility_mode = "MonitorSpecificExclusive";
+      };
     };
   };
 }
