@@ -46,8 +46,8 @@
       }
       {
         _args = [
-          (lib.generators.mkLuaInline "mainMod .. \" + CONTROL + L\"")
-          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"command -v hyprlock &\")")
+          (lib.generators.mkLuaInline "mainMod .. \" + L\"")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprlock &\")")
         ];
       }
       {
@@ -237,14 +237,14 @@
       {
         _args = [
           "switch:on:Lid Switch"
-          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl keyword monitor 'eDP-1, disable'\")")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl eval 'hl.monitor({ output = \\\"desc:AU Optronics 0x4F8A\\\", disabled = true })'\")")
           (lib.generators.mkLuaInline "{ locked = true }")
         ];
       }
       {
         _args = [
           "switch:off:Lid Switch"
-          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl keyword monitor 'eDP-1, 1920x1080@60, 0x0, 1'\")")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"hyprctl eval 'hl.monitor({ output = \\\"desc:AU Optronics 0x4F8A\\\", disabled = false })'\")")
           (lib.generators.mkLuaInline "{ locked = true }")
         ];
       }
