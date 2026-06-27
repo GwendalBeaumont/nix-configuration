@@ -6,6 +6,7 @@ with lib; {
     ./conf
 
     # Programs
+    ./hypridle.nix
     ./hyprlock.nix
   ];
 
