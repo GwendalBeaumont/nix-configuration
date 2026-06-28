@@ -30,5 +30,13 @@ with lib; {
 
   # Qt support
   qt.enable = true;
+
+  home = {
+    packages = with pkgs; [
+      # Screenshots
+      grim
+      slurp
+    ];
+  };
 }
 
