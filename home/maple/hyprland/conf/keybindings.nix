@@ -52,6 +52,12 @@
       }
       {
         _args = [
+          "CTRL + SHIFT + 4"
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"grim -g \\\"$(slurp -d)\\\" - | wl-copy\")")
+        ];
+      }
+      {
+        _args = [
           (lib.generators.mkLuaInline "mainMod .. \" + F\"")
           (lib.generators.mkLuaInline "hl.dsp.window.fullscreen({\"fullscreen\", toggle})")
         ];
