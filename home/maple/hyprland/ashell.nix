@@ -9,14 +9,14 @@
       enable_esc_key = true;
 
       appearance = {
-        primary_color = "#7aa2f7";
+        primary_color = "#813d9c";
         success_color = "#9ece6a";
         warning_color = "#e0af68";
         danger_color = "#f7768e";
         text_color = "#ffffff";
-        workspace_colors = [ "#7aa2f7" "#9ece6a" ];
+        workspace_colors = [ "#000000" ];
         background_color = {
-          base = "#000000";
+          base = "#2E2E2E";
         };
       };
 
@@ -27,14 +27,12 @@
         ];
         center = [
           "Tempo"
-          "MediaPlayer"
         ];
         right = [
+          "MediaPlayer"
           "SystemInfo"
           [
             "Tray"
-          ]
-          [
             "Privacy"
             "Settings"
           ]
