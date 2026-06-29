@@ -31,6 +31,9 @@ with lib; {
   # Qt support
   qt.enable = true;
 
+  # nm-applet
+  services.network-manager-applet.enable = true;
+
   home = {
     packages = with pkgs; [
       # Screenshots
