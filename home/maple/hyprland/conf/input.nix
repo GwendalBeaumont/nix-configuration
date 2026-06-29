@@ -6,7 +6,7 @@
       # https://wiki.hyprland.org/Configuring/Variables/#input
       input = {
         kb_layout = "us";
-        # kb_variant = "altgr-intl";
+        kb_variant = "altgr-intl";
         # kb_model = "";
         # kb_options = "";
         # kb_rules = "";
