@@ -33,6 +33,7 @@ with lib; {
         fail_color = "rgba(ff6633ee) rgba(ff0066ee) 40deg";
 
         font_color = "rgb(255, 255, 255)";
+        font_family = "Sans";
         fade_on_empty = false;
         rounding = 30;
 
@@ -48,6 +49,7 @@ with lib; {
         # TIME
         {
           text = "$TIME"; # ref. https://wiki.hyprland.org/Hypr-Ecosystem/hyprlock/#variable-substitution
+          font_family = "Sans";
           font_size = 80;
 
           position = "0, 200";
@@ -58,6 +60,7 @@ with lib; {
         # DATE
         {
           text = "cmd[update:60000] date +\"%A, %d %B %Y\""; # update every 60 seconds
+          font_family = "Sans";
           font_size = 25;
 
           position = "0, 130";
