@@ -6,9 +6,10 @@ with lib; {
     ./conf
 
     # Programs
-    ./ashell.nix
+    # ./ashell.nix
     ./hypridle.nix
     ./hyprlock.nix
+    ./waybar.nix
   ];
 
   wayland.windowManager.hyprland = {
@@ -34,11 +35,15 @@ with lib; {
   # nm-applet
   services.network-manager-applet.enable = true;
 
+  services.playerctld.enable = true;
+
   home = {
     packages = with pkgs; [
       # Screenshots
       grim
       slurp
+
+      pavucontrol
     ];
   };
 }
