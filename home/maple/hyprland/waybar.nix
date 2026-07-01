@@ -88,6 +88,7 @@
 * {
     font-family: Sans, sans-serif;
     font-size: 12px;
+    font-weight: 500;
     margin: 0;
     padding: 0;
     border: none;
