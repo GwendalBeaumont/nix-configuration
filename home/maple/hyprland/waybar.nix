@@ -46,7 +46,7 @@
             critical = 10;
           };
           interval = 10;
-          format = "{icon} {capacity}%";
+          format = "{icon}  {capacity}%";
           format-charging = "󰂄  {time}";
           format-icons = [ "" "" "" "" "" ];
         };
@@ -98,7 +98,7 @@
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     color: #ffffff;
     transition: background-color 0.5s;
 }
@@ -129,7 +129,7 @@ window#waybar.hidden {
 #idle_inhibitor,
 #keyboard-state,
 #scratchpad {
-    padding: 5px 5px;
+    padding: 3px 5px;
     color: #ffffff;
 }
 
@@ -171,15 +171,15 @@ window#waybar.hidden {
 
 #workspaces button,
 #mode {
-    padding: 5px 8px;
+    padding: 3px 3px;
     background-color: transparent;
     color: #ffffff;
 }
 
 #workspaces button:hover,
-#workspaces button.focused {
-    background-color: #6272a4;
-    box-shadow: inset 0 -3px #ffffff;
+#workspaces button.active {
+    /* background-color: #6272a4; */
+    box-shadow: inset 0 3px #813d9c;
 }
 
 #workspaces button.urgent {
