@@ -153,45 +153,24 @@
       }
       
       # Laptop multimedia keys for volume and LCD brightness
-      # {
-      #   _args = [
-      #     "XF86AudioRaiseVolume"
-      #     (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+\")")
-      #     (lib.generators.mkLuaInline "{ locked = true, repeating = true }")
-      #   ];
-      # }
       {
         _args = [
           "XF86AudioRaiseVolume"
-          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"ashell msg volume-up\")")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+\")")
           (lib.generators.mkLuaInline "{ locked = true, repeating = true }")
         ];
       }
-      # {
-      #   _args = [
-      #     "XF86AudioLowerVolume"
-      #     (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-\")")
-      #     (lib.generators.mkLuaInline "{ locked = true, repeating = true }")
-      #   ];
-      # }
       {
         _args = [
           "XF86AudioLowerVolume"
-          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"ashell msg volume-down\")")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-\")")
           (lib.generators.mkLuaInline "{ locked = true, repeating = true }")
         ];
       }
-      # {
-      #   _args = [
-      #     "XF86AudioMute"
-      #     (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle\")")
-      #     (lib.generators.mkLuaInline "{ locked = true, repeating = true }")
-      #   ];
-      # }
       {
         _args = [
           "XF86AudioMute"
-          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"ashell msg volume-toggle-mute\")")
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle\")")
           (lib.generators.mkLuaInline "{ locked = true, repeating = true }")
         ];
       }
