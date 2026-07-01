@@ -9,7 +9,7 @@
     ./input.nix
     ./keybindings.nix
     # ./workspace-rules.nix
-    # ./window-rules.nix
+    ./window-rules.nix
     ./master-layout.nix
     ./dwindle-layout.nix
   ];

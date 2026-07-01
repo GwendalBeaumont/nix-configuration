@@ -2,16 +2,32 @@
 
 {
   wayland.windowManager.hyprland.settings = {
-    # https://wiki.hyprland.org/Configuring/Window-Rules/
+    # https://wiki.hypr.land/Configuring/Basics/Window-Rules/
     window_rule = [
-      "float,initialClass:^thunderbird$"
-      "center,initialClass:^thunderbird$"
-
-      # Ignore maximize requests from apps. You'll probably like this.
-      "suppressevent maximize, class:.*"
-
-      # Fix some dragging issues with XWayland
-      "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+      {
+        name = "Ignore maximise requests from apps";
+        match = {
+          class = ".*";
+        };
+        suppress_event = "maximize";
+      }
+      {
+        name = "Thunderbird composing";
+        match = {
+          initial_class = "^thunderbird$";
+          initial_title = "^Write";
+        };
+        float = true;
+        center = true;
+      }
+      {
+        name = "Nautilus Previewer";
+        match = {
+          initial_class = "^org.gnome.NautilusPreviewer$";
+        };
+        float = true;
+        center = true;
+      }
     ];
   };
 }
