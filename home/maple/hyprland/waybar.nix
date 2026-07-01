@@ -30,7 +30,7 @@
 
         cpu = {
           interval = 5;
-          format = "  {usage}%";
+          format = "  {usage:02}%";
           tooltip = false;
         };
 
