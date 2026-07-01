@@ -30,13 +30,13 @@
 
         cpu = {
           interval = 5;
-          format = "  {usage:2}%";
+          format = "  {usage:02}%";
           tooltip = false;
         };
 
         memory = {
           interval = 5;
-          format = "  {used:2.2f}/{total:0.2f} GiB";
+          format = "  {used:0.2f}/{total:0.2f} GiB";
           tooltip = false;
         };
 
