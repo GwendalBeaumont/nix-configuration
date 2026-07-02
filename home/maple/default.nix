@@ -44,6 +44,12 @@
     stateVersion = "25.05";
   };
 
+  xdg.desktopEntries.signal = {
+    categories = [ "Messaging" ];
+    name = "Signal";
+    exec = "signal-desktop --password-store=\"gnome-libsecret\" %U";
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
