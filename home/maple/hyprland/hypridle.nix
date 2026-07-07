@@ -15,7 +15,7 @@
         {
           # Lock
           timeout = 300; # 5 mins
-          on-timeout = "hyprlock";
+          on-timeout = "loginctl lock-session";
         }
 
         {
