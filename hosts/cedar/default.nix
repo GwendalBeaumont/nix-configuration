@@ -84,4 +84,7 @@
     enable = true;
     enableSSHSupport = true;
   };
+
+  documentation.enable = false;
+  system.tools.darwin-uninstaller.enable = false;
 }
