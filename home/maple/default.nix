@@ -45,7 +45,6 @@
   };
 
   xdg.desktopEntries.signal = {
-    categories = [ "Messaging" ];
     name = "Signal";
     exec = "signal-desktop --password-store=\"gnome-libsecret\" %U";
   };
