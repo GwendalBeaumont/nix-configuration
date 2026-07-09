@@ -12,7 +12,7 @@
     };
 
     menu = {
-      _var = "hyprlauncher";
+      _var = "fuzzel";
     };
   };
 }

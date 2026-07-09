@@ -23,7 +23,8 @@ with lib; {
   services.hyprpolkitagent.enable = true;
 
   # Launcher
-  services.hyprlauncher.enable = true;
+  # services.hyprlauncher.enable = true;
+  programs.fuzzel.enable = true;
 
   # Notification daemon
   services.mako.enable = true;
