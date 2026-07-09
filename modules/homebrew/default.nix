@@ -14,7 +14,7 @@
 
     onActivation = {
       autoUpdate = true;
-      cleanup = "uninstall";
+      cleanup = "zap";
       extraFlags = [
         "--verbose"
         "--force-cleanup"

@@ -2,18 +2,12 @@
 
 {
   imports = [
-    ../common
+    ../configs
 
-    ./eclipse
-    ./element-desktop
     # ./emacs
     ./firefox
     ./git
     ./hyprland
-    ./kitty
-    ./lazygit
-    ./neovim
-    ./onlyoffice
     ./shell
     ./vscode
   ];
@@ -21,6 +15,7 @@
   home = {
     username = "${username}";
     homeDirectory = "/home/${username}";
+    stateVersion = "25.05";
 
     packages = with pkgs; [
       # Communication
@@ -40,10 +35,19 @@
       libsecret
       wl-clipboard
     ];
-
-    stateVersion = "25.05";
   };
 
+  programs = {
+    eclipse.enable = true;
+    element-desktop.enable = true;
+    kitty.enable = true;
+    lazygit.enable = true;
+    neovim.enable = true;
+    onlyoffice.enable = true;
+    vscode.enable = true;
+  };
+
+  # Fix from switch to Hyprland
   xdg.desktopEntries.signal = {
     name = "Signal";
     exec = "signal-desktop --password-store=\"gnome-libsecret\" %U";
