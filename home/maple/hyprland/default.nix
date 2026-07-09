@@ -43,6 +43,7 @@ with lib; {
       grim
       slurp
 
+      # Sound control
       pavucontrol
     ];
   };
