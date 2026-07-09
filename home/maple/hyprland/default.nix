@@ -6,6 +6,7 @@ with lib; {
     ./conf
 
     # Programs
+    ./fuzzel.nix
     ./hypridle.nix
     ./hyprlock.nix
     ./waybar.nix
@@ -21,10 +22,6 @@ with lib; {
 
   # Hyprpolkit
   services.hyprpolkitagent.enable = true;
-
-  # Launcher
-  # services.hyprlauncher.enable = true;
-  programs.fuzzel.enable = true;
 
   # Notification daemon
   services.mako.enable = true;
