@@ -16,11 +16,11 @@
       };
 
       colors = {
-        background = "282c34ff";
-        text = "abb2bfff";
+        background = "1d1d1dff";
+        text = "f7f6ecff";
         match = "9141acff";
-        selection = "4b5263ff";
-        selection-text = "abb2bfff";
+        selection = "165776ff";
+        selection-text = "1d1d1dff";
         selection-match = "c061cbff";
         border = "c061cbee";
       };
