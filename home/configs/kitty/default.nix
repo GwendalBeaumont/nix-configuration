@@ -4,7 +4,7 @@
   programs.kitty = {
     enableGitIntegration = true;
 
-    themeFile = "OneDark";
+    themeFile = "Japanesque";
     font = {
       package = pkgs.nerd-fonts.jetbrains-mono;
       name = "JetBrainsMono Nerd Font Mono";
