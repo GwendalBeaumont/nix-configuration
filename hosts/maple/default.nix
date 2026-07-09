@@ -4,7 +4,7 @@
   imports = [
     ./hardware-configuration.nix
 
-    "${modules}/containers"
+    # "${modules}/containers"
     "${modules}/gnome"
     "${modules}/hyprland"
     "${modules}/keyboard"
