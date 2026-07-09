@@ -10,7 +10,6 @@
         dpi-aware = "no";
         use-bold = true;
         placeholder = "Search...";
-        show-actions = true;
         terminal = "${pkgs.kitty}/bin/kitty";
         horizontal-pad = 20;
         inner-pad = 8;
