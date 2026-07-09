@@ -6,7 +6,6 @@ with lib; {
     ./conf
 
     # Programs
-    # ./ashell.nix
     ./hypridle.nix
     ./hyprlock.nix
     ./waybar.nix
