@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../config
+    ../configs
 
     ./git
     ./kitty
