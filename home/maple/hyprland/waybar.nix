@@ -12,15 +12,15 @@
           "hyprland/workspaces"
         ];
 
-        modules-center = [ "clock" ];
+        modules-center = [ "mpris" ];
 
         modules-right = [
-          "mpris"
+          "tray"
           "cpu"
           "memory"
-          "tray"
           "pulseaudio"
           "battery"
+          "clock"
         ];
 
         clock = {
@@ -113,9 +113,9 @@ window#waybar.hidden {
 }
 
 #clock {
-    min-width: 140px;
-    color: #ffffff;
-    padding: 0px 10px;
+  min-width: 100px;
+  color: #ffffff;
+  padding: 3px 5px;
 }
 
 #battery,
