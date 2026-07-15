@@ -43,6 +43,22 @@ with lib; {
       # Sound control
       pavucontrol
     ];
+
+    pointerCursor = {
+      enable = true;
+      gtk.enable = true;
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
+      size = 16;
+    };
+  };
+
+  gtk = {
+    enable = true;
+
+    iconTheme = {
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
+    };
   };
 }
-
