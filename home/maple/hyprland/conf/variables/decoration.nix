@@ -24,6 +24,19 @@
           enabled = false;
         };
       };
+
+      group = {
+        col.border_active = "rgba(3584e4ff)";
+        col.border_inactive = "rgba(99c1f1ff)";
+
+        groupbar = {
+          font_size = 12;
+          height = 16;
+          indicator_height = 1;
+          col.active = "rgba(3584e4ff)";
+          col.inactive = "rgba(99c1f1ff)";
+        };
+      };
     };
   };
 }

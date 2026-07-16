@@ -28,6 +28,13 @@
         float = true;
         center = true;
       }
+      {
+        name = "Group Papers windows";
+        match = {
+          class = "^org.gnome.Papers$";
+        };
+        group = "set";
+      }
     ];
   };
 }
