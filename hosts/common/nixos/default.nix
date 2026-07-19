@@ -11,7 +11,7 @@
   ];
 
   # Configure console keymap
-  console.keyMap = "fr";
+  console.useXkbConfig = true;
 
   # Garbage collection
   nix = {
