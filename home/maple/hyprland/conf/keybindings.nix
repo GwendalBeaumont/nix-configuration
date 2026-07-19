@@ -41,7 +41,7 @@
       {
         _args = [
           (lib.generators.mkLuaInline "mainMod .. \" + P\"")
-          (lib.generators.mkLuaInline "hl.dsp.window.pseudo()")
+          (lib.generators.mkLuaInline "hl.dsp.window.pin({ action = \"toggle\" })")
         ];
       }
       {
@@ -60,6 +60,12 @@
         _args = [
           (lib.generators.mkLuaInline "mainMod .. \" + F\"")
           (lib.generators.mkLuaInline "hl.dsp.window.fullscreen({\"fullscreen\", toggle})")
+        ];
+      }
+      {
+        _args = [
+          (lib.generators.mkLuaInline "mainMod .. \" + G\"")
+          (lib.generators.mkLuaInline "hl.dsp.group.toggle()")
         ];
       }
 
