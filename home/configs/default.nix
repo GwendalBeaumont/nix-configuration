@@ -24,8 +24,5 @@
     gnumake
     trash-cli
     tree-sitter
-
-    # LaTeX
-    texliveFull
   ];
 }
