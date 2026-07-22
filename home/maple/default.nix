@@ -33,6 +33,7 @@
       # Utils
       libgcc
       libsecret
+      stow
       wl-clipboard
     ];
   };
