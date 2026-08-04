@@ -3,9 +3,9 @@
 {
   homebrew.casks = [
     # Dev
-    "android-studio"
+    # "android-studio"
     "eclipse-ide"
-    "pgadmin4"
+    # "pgadmin4"
     "visual-studio-code"
 
     # Communications
