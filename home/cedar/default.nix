@@ -21,9 +21,9 @@
       pinentry_mac
     ];
 
-    sessionPath = [
-      "$HOME/flutter/bin"
-    ];
+    # sessionPath = [
+    #   "$HOME/flutter/bin"
+    # ];
 
     stateVersion = "25.05";
   };
