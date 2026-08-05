@@ -1,9 +1,9 @@
 { config, pkgs, hostname, username, modules, ... }:
 
 {
-  imports = [
-    "${modules}/homebrew"
-  ];
+  # imports = [
+  #   "${modules}/homebrew"
+  # ];
 
   nix = {
     settings = {
