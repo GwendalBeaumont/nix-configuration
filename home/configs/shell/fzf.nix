@@ -1,7 +1,7 @@
 { inputs, config, lib, pkgs, ... }:
 
 {
-  programs.direnv = {
+  programs.fzf = {
     enableZshIntegration = true;
   };
 }

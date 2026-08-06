@@ -1,10 +1,6 @@
 { config, pkgs, hostname, username, modules, ... }:
 
 {
-  # imports = [
-  #   "${modules}/homebrew"
-  # ];
-
   nix = {
     settings = {
       experimental-features = "nix-command flakes";

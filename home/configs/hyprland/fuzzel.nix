@@ -2,8 +2,6 @@
 
 {
   programs.fuzzel = {
-    enable = true;
-
     settings = {
       main = {
         font = "Sans:size=14";

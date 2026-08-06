@@ -3,6 +3,7 @@
 {
   imports = [
     ./fastfetch.nix
+    ./fzf.nix
   ];
 
   programs.zsh = {
@@ -30,16 +31,5 @@
 
     nfu = "nix flake update --flake ~/nix-configuration/";
     enva = "echo 'use flake' > .envrc && direnv allow";
-  };
-
-  programs = {
-    bat.enable = true;
-    btop.enable = true;
-    fd.enable = true;
-    fzf = {
-      enable = true;
-      enableZshIntegration = true;
-    };
-    ripgrep.enable = true;
   };
 }

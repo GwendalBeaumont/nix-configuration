@@ -2,19 +2,16 @@
 
 {
   imports = [
+    ../common/nixos.nix
     ../configs
 
-    # ./emacs
-    ./firefox
+    ./cli
     ./git
     ./hyprland
-    ./shell
     ./vscode
   ];
 
   home = {
-    username = "${username}";
-    homeDirectory = "/home/${username}";
     stateVersion = "25.05";
 
     packages = with pkgs; [
@@ -27,24 +24,26 @@
       zotero
 
       # Misc
-      noto-fonts-cjk-sans
       qbz
-
-      # Utils
-      libgcc
-      libsecret
-      stow
-      wl-clipboard
     ];
   };
 
   programs = {
+    direnv.enable = true;
+    nix-direnv.enable = true;
     eclipse.enable = true;
     element-desktop.enable = true;
+    # emacs.enable = true;
+    fastfetch.enable = true;
+    firefox.enable = true;
+    git.enable = true;
+    gpg.enable = true;
     kitty.enable = true;
     lazygit.enable = true;
+    lf.enable = true;
     neovim.enable = true;
     onlyoffice.enable = true;
+    starship.enable = true;
     vscode.enable = true;
   };
 
@@ -53,7 +52,4 @@
     name = "Signal";
     exec = "signal-desktop --password-store=\"gnome-libsecret\" %U";
   };
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
 }

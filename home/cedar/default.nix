@@ -2,32 +2,30 @@
 
 {
   imports = [
+    ../common/darwin.nix
     ../configs
 
+    ./cli
     ./git
-    ./kitty
-    ./lazygit
-    ./neovim
-    ./shell
   ];
 
   home = {
-    username = "${username}";
-
-    packages = with pkgs; [
-      # Misc
-      cairo
-      cocoapods
-      pinentry_mac
-    ];
-
-    # sessionPath = [
-    #   "$HOME/flutter/bin"
-    # ];
-
     stateVersion = "25.05";
   };
 
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs = {
+    direnv.enable = true;
+    nix-direnv.enable = true;
+    fastfetch.enable = true;
+    git.enable = true;
+    gpg.enable = true;
+    kitty = {
+      enable = true;
+      package = pkgs.emptyDirectory;
+    };
+    lazygit.enable = true;
+    lf.enable = true;
+    neovim.enable = true;
+    starship.enable = true;
+  };
 }

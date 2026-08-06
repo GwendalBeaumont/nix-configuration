@@ -2,8 +2,6 @@
 
 {
   programs.lf = {
-    enable = true;
-
     commands = {
       rename = "%[ -e $1 ] && printf 'file exists' || mv $f $1";
       trash = "%trash-put -- $fx";

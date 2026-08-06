@@ -2,8 +2,6 @@
 
 {
   programs.fastfetch = {
-    enable = true;
-
     settings = {
       logo = {
         type = "none";

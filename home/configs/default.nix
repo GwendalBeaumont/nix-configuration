@@ -3,26 +3,16 @@
 {
   imports = [
     ./direnv
+    ./emacs
+    ./firefox
     ./git
     ./gpg
+    ./hyprland
     ./kitty
     ./lazygit
     ./lf
     ./neovim
     ./shell
     ./starship
-  ];
-
-  home.packages = with pkgs; [
-    # Archives
-    zip
-    unzip
-
-    # Utils
-    coreutils
-    curl
-    gnumake
-    trash-cli
-    tree-sitter
   ];
 }

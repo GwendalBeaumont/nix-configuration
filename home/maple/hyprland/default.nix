@@ -1,38 +1,9 @@
 { inputs, config, lib, pkgs, ... }:
 
 with lib; {
-  imports = [
-    # Hyprland config
-    ./conf
-
-    # Programs
-    ./fuzzel.nix
-    ./hypridle.nix
-    ./hyprlock.nix
-    ./waybar.nix
-  ];
-
   wayland.windowManager.hyprland = {
     enable = true;
-    package = null;
-    portalPackage = null;
-
-    configType = "lua";
   };
-
-  # Hyprpolkit
-  services.hyprpolkitagent.enable = true;
-
-  # Notification daemon
-  services.mako.enable = true;
-
-  # Qt support
-  qt.enable = true;
-
-  # nm-applet
-  services.network-manager-applet.enable = true;
-
-  services.playerctld.enable = true;
 
   home = {
     packages = with pkgs; [
@@ -44,21 +15,33 @@ with lib; {
       pavucontrol
     ];
 
+    # Mouse pointer
     pointerCursor = {
       enable = true;
       gtk.enable = true;
-      package = pkgs.adwaita-icon-theme;
-      name = "Adwaita";
-      size = 16;
     };
   };
 
-  gtk = {
-    enable = true;
-
-    iconTheme = {
-      package = pkgs.adwaita-icon-theme;
-      name = "Adwaita";
-    };
+  # Additionnal programs
+  programs = {
+    fuzzel.enable = true;
+    hyprlock.enable = true;
+    waybar.enable = true;
   };
+
+  services = {
+    hypridle.enable = true;
+    hyprpolkitagent.enable = true;
+    playerctld.enable = true;
+  
+    # Notification daemon
+    mako.enable = true;
+
+    # nm-applet
+    network-manager-applet.enable = true;
+  };
+
+  # GTK/Qt support
+  gtk.enable = true;
+  qt.enable = true;
 }
