@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./cli
     ./direnv
     ./emacs
     ./firefox
@@ -12,7 +13,6 @@
     ./lazygit
     ./lf
     ./neovim
-    ./shell
     ./starship
   ];
 }

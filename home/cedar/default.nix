@@ -3,7 +3,11 @@
 {
   imports = [
     ../common/darwin.nix
-    ../configs
+    ../configs/cli
+    ../configs/direnv
+    ../configs/git
+    ../configs/gpg
+    ../configs/neovim
 
     ./cli
     ./git
@@ -18,16 +22,11 @@
       enable = true;
       nix-direnv.enable = true;
     };
-    # fastfetch.enable = true;
     git.enable = true;
     gpg.enable = true;
     kitty = {
       enable = true;
       package = pkgs.emptyDirectory;
     };
-    # lazygit.enable = true;
-    # lf.enable = true;
-    # neovim.enable = true;
-    # starship.enable = true;
   };
 }
