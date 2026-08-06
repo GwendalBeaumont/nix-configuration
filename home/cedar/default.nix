@@ -14,8 +14,10 @@
   };
 
   programs = {
-    direnv.enable = true;
-    nix-direnv.enable = true;
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
     # fastfetch.enable = true;
     git.enable = true;
     gpg.enable = true;

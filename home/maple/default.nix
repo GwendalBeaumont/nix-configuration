@@ -29,8 +29,10 @@
   };
 
   programs = {
-    direnv.enable = true;
-    nix-direnv.enable = true;
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
     eclipse.enable = true;
     element-desktop.enable = true;
     # emacs.enable = true;
