@@ -24,9 +24,5 @@
     };
     git.enable = true;
     gpg.enable = true;
-    kitty = {
-      enable = true;
-      package = pkgs.emptyDirectory;
-    };
   };
 }

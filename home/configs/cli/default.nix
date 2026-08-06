@@ -29,6 +29,8 @@
     ll = "ls -l";
     lla = "ls -la";
 
+    lg = "lazygit";
+
     nfu = "nix flake update --flake ~/nix-configuration/";
     enva = "echo 'use flake' > .envrc && direnv allow";
   };
